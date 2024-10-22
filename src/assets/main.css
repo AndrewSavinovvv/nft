@@ -1,0 +1,19 @@
+body {
+  background: #2B2B2B;
+  margin: 0;
+}
+.container {
+  padding: 30px 40px;
+
+  @media   (max-width: 767px) {
+  padding: 30px 40px;
+  }
+
+  @media  (max-width: 1023px) {
+  padding: 50px 72px;
+  }
+
+  @media (min-width: 1024px) {
+  padding: 80px 115px;
+  }
+}
