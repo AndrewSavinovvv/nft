@@ -134,16 +134,16 @@
   margin-right: 8px;
   display: none;
 }
-@media  (max-width: 1023px) {
+@media  (max-width: 690px) {
   .footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 30px;
   }
   .footer__btn {
     position: absolute;
     bottom: 0;
-    right: -20px;
+    right: -10px;
     padding: 19px 20px;
     border-radius: 15px;
     font-size: 16px;
@@ -158,7 +158,7 @@
     position: relative;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 690px) {
   .footer__sub {
     display: flex;
     flex-direction: column;

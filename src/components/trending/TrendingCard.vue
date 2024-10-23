@@ -94,10 +94,7 @@ defineProps({
   padding-right: 12px;
 }
 
-@media (max-width: 971px) {
-  .card__main {
-    justify-content: center;
-  }
+@media (max-width: 1280px) {
   .card {
     display: flex;
     justify-content: center;
@@ -107,5 +104,29 @@ defineProps({
   }
 
 }
+@media (max-width: 834px) {
+  .trending__title {
+    font-size: 28px;
+  }
+  .trending__text {
+    font-size: 16px;
+  }
+  .trending {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 72px;
+  }
+  .card__main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
 
+  .card__main > *:nth-child(n+1) {
+    display: none;
+  }
+}
 </style>

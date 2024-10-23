@@ -185,14 +185,16 @@ const users = [
   justify-items: center;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1280px) {
   .card {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0 72px;
   }
   .creators__btn {
-    padding: 19px 29px;
+    padding: 15px 20px;
+    margin-right: 50px;
   }
   .creators__title {
     font-size: 28px;
@@ -202,12 +204,22 @@ const users = [
   }
 }
 
+@media (max-width: 834px) {
+  .creators__title, .creators__text {
+    padding-left: 40px;
+  }
+  .creators__info {
+    display: flex;
+    gap: 0;
+  }
+}
 @media (max-width: 767px) {
   .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0;
   }
   .creators__title {
     font-size: 28px;
@@ -215,6 +227,7 @@ const users = [
   .creators__text {
     display: flex;
     font-size: 16px;
+
   }
   .creators__btn {
     display: none;
@@ -222,11 +235,17 @@ const users = [
   .creators__btn1 {
     display: flex;
     justify-content: space-evenly;
-    width: 114%;
+    width: 100%;
     margin-top: 40px;
   }
   .card > *:nth-child(n+6) {
     display: none;
   }
+  .creators {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+  }
 }
+
 </style>

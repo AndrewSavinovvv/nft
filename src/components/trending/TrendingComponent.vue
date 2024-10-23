@@ -41,7 +41,6 @@ const cards = [
 </template>
 
 <style scoped>
-
 .trending__title {
   font-family: "Work Sans", sans-serif;
   font-size: 38px;
@@ -67,13 +66,14 @@ const cards = [
   gap: 20px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 834px) {
   .trending__title {
     font-size: 28px;
-    font-family: "Work Sans", sans-serif;
+    padding-left: 72px;
   }
   .trending__text {
     font-size: 16px;
+    padding-left: 72px;
   }
   .trending {
     display: flex;
@@ -81,11 +81,33 @@ const cards = [
     justify-content: center;
     margin-top: 40px;
   }
-  .card__main  {
+  .card__main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 0;
+  }
+
+  .card__main > *:nth-child(n+3) {
+    display: none;
+  }
+}
+@media (max-width: 1280px) {
+  .card__main > *:nth-child(n+3) {
+    display: none;
+  }
+}
+@media (max-width: 780px) {
+  .card__main > *:nth-child(n+2) {
+    display: none;
+  }
+  .trending__title {
+    font-size: 28px;
+    padding-left: 72px;
+  }
+  .trending__text {
+    padding-left: 72px;
+    font-size: 16px;
   }
 }
 </style>

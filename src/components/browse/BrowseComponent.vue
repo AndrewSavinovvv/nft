@@ -62,14 +62,19 @@ const categories = [
   gap: 20px;
   margin-top: 20px;
 }
-@media  (max-width: 1023px) {
+@media  (max-width: 1280px) {
   .browse__title {
     font-size: 28px;
   }
 }
-@media   (max-width: 767px) {
+@media   (max-width: 834px) {
   .browse__grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .browse {
+    padding: 30px 40px;
   }
 }
 </style>

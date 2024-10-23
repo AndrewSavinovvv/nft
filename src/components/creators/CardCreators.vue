@@ -80,24 +80,8 @@ defineProps({
   width: 100px;
 }
 
-@media (max-width: 1023px) {
-  .creators__card {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-  }
-  .user__name {
-    display: flex;
-    justify-content: start;
-    font-family: "Work Sans", sans-serif;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 30px;
-    color: white;
-  }
-}
-@media (max-width: 1023px) {
+
+@media (max-width: 1280px) {
   .user__avatar {
    margin-bottom: 0;
     margin-right: 20px;
@@ -111,20 +95,27 @@ defineProps({
 
   }
 }
-
-
+@media (max-width: 834px) {
+  .creators__card {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .creators__card:nth-child(n+7) {
+    display: none;
+  }
+}
 @media (max-width: 685px) {
   .creators__card {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
   }
+
   .user__id {
     position: absolute;
     top: 16px;
     left: 10px;
-
   }
 }
 </style>

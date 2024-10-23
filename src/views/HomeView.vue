@@ -7,12 +7,12 @@ import BrowseComponent from "@/components/browse/BrowseComponent.vue";
 </script>
 
 <template>
-  <div class="container">
+
     <InfoComponent></InfoComponent>
-   <TrendingComponent></TrendingComponent>
+<TrendingComponent></TrendingComponent>
  <CreatorsComponent></CreatorsComponent>
-    <BrowseComponent></BrowseComponent>
-  </div>
+   <BrowseComponent></BrowseComponent>
+
 </template>
 
 <style scoped>

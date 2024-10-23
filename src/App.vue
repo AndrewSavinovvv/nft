@@ -5,8 +5,10 @@ import FooterComponent from "@/components/FooterComponent.vue";
 
 <template>
   <HeaderComponent></HeaderComponent>
-  <router-view />
-  <FooterComponent></FooterComponent>
+  <div class="container">
+    <router-view></router-view>
+  </div>
+<FooterComponent></FooterComponent>
 </template>
 
 <style scoped>

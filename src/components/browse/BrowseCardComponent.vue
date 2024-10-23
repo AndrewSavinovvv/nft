@@ -1,12 +1,3 @@
-<!--<template>-->
-<!--  <div class="browse__categories">-->
-<!--    <img class="browse__img" :src="img1" alt="background image">-->
-<!--    <img class="browse__img2" :src="img2" alt="foreground image">-->
-<!--    <h6 class="categories__name">{{ name }}</h6>-->
-<!--  </div>-->
-<!--</template>-->
-
-
 
 <template>
   <div class="browse__categories">
@@ -45,8 +36,7 @@ defineProps({
 .browse__img2 {
   position: absolute;
   top: 70px;
-  left: 70px;
-  width: 60px;
+  width: 50px;
 }
 
 .categories__name {
@@ -60,38 +50,43 @@ defineProps({
   margin-top: 20px;
 }
 
-
-@media (max-width: 1023px) {
-  .browse__categories {
-    max-width: 200px;
-  }
-
-  .browse__img2 {
-    top: 50px;
-    left: 50px;
-    width: 50px;
-  }
-
-  .categories__name {
-    font-size: 18px;
-    margin-left: 20px;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .browse__categories {
     max-width: 160px;
   }
 
   .browse__img2 {
-    top: 40px;
-    left: 40px;
+    top: 50px;
     width: 40px;
   }
 
   .categories__name {
     font-size: 16px;
     margin-left: 15px;
+  }
+}
+@media (min-width: 1280px) {
+  max-width: 1050px;
+  .browse__img2 {
+    position: absolute;
+    top: 70px;
+    width: 50px;
+  }
+}
+@media (max-width: 864px) {
+  max-width: 690px;
+  .browse__categories {
+    max-width: 200px;
+  }
+
+  .browse__img2 {
+    top: 50px;
+    width: 80px;
+  }
+
+  .categories__name {
+    font-size: 18px;
+    margin-left: 20px;
   }
 }
 </style>
