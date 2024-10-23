@@ -21,7 +21,7 @@ const blocks = [
         Get Started
       </button>
       <div class="info__right_blocks">
-        <div v-for="block in blocks" :key="block.title" style="order: 2;">
+        <div v-for="block in blocks" :key="block.title">
           <h4 class="blocks__count">{{block.count}}</h4>
           <h6 class="blocks__info">{{block.title}}</h6>
         </div>
@@ -40,7 +40,7 @@ const blocks = [
       Get Started
     </button>
     <div class="info__left_blocks">
-      <div v-for="block in blocks" :key="block.title" style="order: 2;">
+      <div v-for="block in blocks" :key="block.title">
         <h4 class="blocks__count">{{block.count}}</h4>
         <h6 class="blocks__info">{{block.title}}</h6>
       </div>
